@@ -15,10 +15,10 @@ header {
    background: linear-gradient(to right, rgb(139,0,0) 20%, rgb(139,0,0));
         
     font-family: Helvetica;
-	font-size: 1.45em;
+	font-size: 1em;
 	text-align: center;
     color: #00001a;
-	border-width: 2px;
+	border-width: 1px;
 	border-style: solid;
 	border-color: #000000;
 	
@@ -44,25 +44,9 @@ address {
 	padding: 5px 5px 15px 15px; 
 	
 	{
-
-
-
-
-
-.flex-container {
-  display: flex;
-}
-
-.flex-item {
-  flex: 1;
-  padding: 5px;
-}
-
 	
 
-section {
-  display: flex;
-}
+
 
 
 
