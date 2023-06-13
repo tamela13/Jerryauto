@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<link href="styles.css" rel="stylesheet" type="text/css" />
+<link href="lay.css" rel="stylesheet" type="text/css" />
+
+
+
+
+<body>
+
+ <header>
+  <div class="flex-container">
+    
+    <div class="item">
+      <h1> Quality Collision Repair Since 1968</h1>
+    </div>
+	<div class="item">
+      <!-- Picture goes here -->
+      <img src="logo.jpg" alt="Your Picture">
+    </div>
+    <div class="item">
+      <h2>Contact Information </h2><address>
+  8890 Miller Rd <br>
+            Bainbridge Island, WA 98110 <br>
+			PHONE: <a href="tel:+2068424063">+1 (206) 842-4063</a>
+			Email: <a href="jerrysrebuild@gmail.com">jerrysrebuild@gmail.com</a> <br>
+			<a href="https://www.facebook.com/collisionwork" class="button">Facebook</a>
+			</address>
+    </div>
+  </div>
+</header>   
+	
+
+  
+<div class="slideshow-container">
+<div class="caption"><h1>Caption</h1></div>
+  <div class="slide">
+    <img src="car.jpg" alt="Image 1">
+  </div>
+  <div class="slide">
+    <img src="car1.jpg" alt="Image 2">
+  </div>
+  <div class="slide">
+    <img src="car2.jpg" alt="Image 3">
+  </div>
+</div>
+
+<script>
+var slides = document.querySelectorAll('.slide');
+var currentSlide = 0;
+
+function showSlide(n) {
+  slides[currentSlide].style.display = 'none';
+  currentSlide = (n + slides.length) % slides.length;
+  slides[currentSlide].style.display = 'block';
+}
+
+showSlide(currentSlide); // Show initial slide
+
+setInterval(function() {
+  showSlide(currentSlide + 1);
+}, 3000); // Change slide every 3 seconds
+</script>
+
+
+
+
+
+<footer>
+    <p>Quality Collision Repair Since 1968</p>
+  </footer>
+</body>
+</html>
