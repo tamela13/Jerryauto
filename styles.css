@@ -18,7 +18,9 @@ h3 {
   font-size: 2em;
   font-style: italic;
 }
-
+h4 {
+	font-family: Georgia;
+}
 address {
 	color: grey;
 }
@@ -121,10 +123,11 @@ header {
 }
 
 .image-container img {
-  width: 410px; /* Adjust the width as needed */
+  width: 400px; /* Adjust the width as needed */
   height: auto;
   margin-right: 20px; /* Adjust the margin as needed */
   padding: 3px 3px 3px 3px;
+  
   
 }
 
