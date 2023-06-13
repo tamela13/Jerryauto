@@ -1,0 +1,76 @@
+body {
+  background-color: grey;
+}
+h1 {
+  color: grey;
+}
+h2 {
+  color: grey;
+}
+
+address {
+	color: grey;
+}
+
+
+
+html {
+  
+   font-family:  Helvetica, Verdana, Geneva, sans-serif;
+   
+}
+a:link {
+	color: #000000;
+	
+	
+}
+a:visited {
+    color: black;
+	
+}
+
+header {
+  background: #f2f2f2;
+  
+}
+
+.flex-container {
+  display: flex;
+}
+
+.item {
+  flex: 1;
+  margin: 0 5px;
+}
+
+
+
+.flex-container {
+  display: flex;
+  justify-content: center; /* Horizontally centers the slideshow */
+  align-items: center; /* Vertically centers the slideshow */
+}
+
+.slideshow-container {
+  position: relative;
+}
+
+.slide {
+  display: none;
+}
+
+.slide img {
+  width: 30%;
+  height: auto;
+}
+.caption {
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: Papyrus;
+}
+
+footer {
+	text-align: center;
+	color: grey;
+	
+}
