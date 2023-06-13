@@ -1,0 +1,80 @@
+
+
+
+/* HTML and Body styles */
+
+html {
+   background: rgb(192,192,192);
+   font-family: Fantasy, Helvetica, Verdana, Geneva, sans-serif;
+   
+}
+
+
+
+header {
+   background: linear-gradient(to right, rgb(139,0,0) 20%, rgb(139,0,0));
+        
+    font-family: Helvetica;
+	font-size: 1.45em;
+	text-align: center;
+    color: #00001a;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #000000;
+	
+}
+
+body {
+	display: block;
+   background-color: rgb(139,0,0);
+   box-shadow: rgb(139,0,0) 10px 0px 40px, rgb(139,0,0) -10px 0px 40px;
+   border-left: 1px solid rgb(139,0,0);
+   border-right: 1px solid rgb(139,0,0);
+   min-height: 100%;   
+   margin: 0px auto;
+   min-width: 520px;
+   max-width: 1324px;   
+   width: 100%;
+}
+
+
+
+
+address {
+	padding: 5px 5px 15px 15px; 
+	
+	{
+
+
+
+
+
+.flex-container {
+  display: flex;
+}
+
+.flex-item {
+  flex: 1;
+  padding: 5px;
+}
+
+	
+
+section {
+  display: flex;
+}
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
