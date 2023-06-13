@@ -1,11 +1,22 @@
+
+
+
 body {
   background-color: grey;
 }
+
 h1 {
   color: grey;
+  text-align: left;
 }
 h2 {
   color: grey;
+}
+
+h3 {
+  color: grey;
+  font-size: 2em;
+  font-style: italic;
 }
 
 address {
@@ -19,30 +30,40 @@ html {
    font-family:  Helvetica, Verdana, Geneva, sans-serif;
    
 }
-a:link {
-	color: #000000;
-	
-	
-}
-a:visited {
-    color: black;
-	
-}
+
 
 header {
+	
   background: #f2f2f2;
   
 }
 
 .flex-container {
   display: flex;
+  	font-family: Helvetica;
+	font-size: 1.45em;
+	text-align: center;
+    color: #00001a;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #000000;
+  
 }
 
 .item {
   flex: 1;
   margin: 0 5px;
 }
-
+.about {
+	font-family: Helvetica;
+	font-size: 1.45em;
+	text-align: center;
+    color: #00001a;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #000000;
+	
+}
 
 
 .flex-container {
@@ -51,22 +72,60 @@ header {
   align-items: center; /* Vertically centers the slideshow */
 }
 
+
+
 .slideshow-container {
+  margin: 0 10px; /* Adjust the margin as needed */
+}
+
+.slideshow {
   position: relative;
+  max-width: 100%;
+  overflow: hidden;
 }
 
-.slide {
+.slideshow img {
   display: none;
-}
-
-.slide img {
-  width: 30%;
+  width: 100%;
   height: auto;
 }
+
+.slideshow img.active {
+  display: block;
+}
+
 .caption {
   margin-bottom: 10px;
   text-align: center;
   font-family: Papyrus;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  	font-family: Helvetica;
+	font-size: 1.45em;
+	text-align: center;
+    color: #00001a;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #000000;
+	
+}
+
+.image-container {
+  margin-left: 10px; /* Adjust the margin as needed */
+  
+  
+  
+}
+
+.image-container img {
+  width: 410px; /* Adjust the width as needed */
+  height: auto;
+  margin-right: 20px; /* Adjust the margin as needed */
+  padding: 3px 3px 3px 3px;
+  
 }
 
 footer {
