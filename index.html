@@ -13,7 +13,7 @@
   <div class="flex-container">
     
     <div class="item">
-      <h1> Quality Collision Repair Since 1968</h1>
+      <h3> Quality Collision Repair Since 1968</h3>
     </div>
 	<div class="item">
       <!-- Picture goes here -->
@@ -30,37 +30,77 @@
     </div>
   </div>
 </header>   
-	
+	<article class= "about">
+<p>
+where will this end up?
+</p>
 
+</article >
+
+  <div class="container">
   
-<div class="slideshow-container">
-<div class="caption"><h1>Caption</h1></div>
-  <div class="slide">
-    <img src="car.jpg" alt="Image 1">
+  <div class="image-container">
+    <img src="loren.jpg" alt="Image 1">
+    
   </div>
-  <div class="slide">
-    <img src="car1.jpg" alt="Image 2">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+</div>
+
+
+  <div class="flex-container">
+  <div class="slideshow-container">
+  <div class="caption"><h1>Caption</h1></div>
+    <div class="slideshow">
+      <img src="car.jpg" alt="Slide 1">
+      <img src="car1.jpg" alt="Slide 2">
+      <img src="car2.jpg" alt="Slide 3">
+    </div>
   </div>
-  <div class="slide">
-    <img src="car2.jpg" alt="Image 3">
+  
+
+  <div class="slideshow-container">
+   <div class="caption"><h1>Caption</h1></div>
+    <div class="slideshow">
+      <img src="jeep.jpg" alt="Slide 4">
+      <img src="jeep1.jpg" alt="Slide 5">
+      <img src="jeep2.jpg" alt="Slide 6">
+    </div>
   </div>
 </div>
 
-<script>
-var slides = document.querySelectorAll('.slide');
-var currentSlide = 0;
 
-function showSlide(n) {
-  slides[currentSlide].style.display = 'none';
-  currentSlide = (n + slides.length) % slides.length;
-  slides[currentSlide].style.display = 'block';
+  
+
+
+
+<script>
+var slideshowContainers = document.querySelectorAll('.slideshow-container');
+var currentIndexes = [0, 0];
+var intervalIds = [];
+
+function showSlide(slideshowIndex, slideIndex) {
+  var slides = slideshowContainers[slideshowIndex].querySelectorAll('.slideshow img');
+  for (var i = 0; i < slides.length; i++) {
+    slides[i].classList.remove('active');
+  }
+  slides[slideIndex].classList.add('active');
 }
 
-showSlide(currentSlide); // Show initial slide
+function startSlideshow(slideshowIndex) {
+  intervalIds[slideshowIndex] = setInterval(function() {
+    currentIndexes[slideshowIndex]++;
+    var slides = slideshowContainers[slideshowIndex].querySelectorAll('.slideshow img');
+    if (currentIndexes[slideshowIndex] >= slides.length) {
+      currentIndexes[slideshowIndex] = 0;
+    }
+    showSlide(slideshowIndex, currentIndexes[slideshowIndex]);
+  }, 2000);
+}
 
-setInterval(function() {
-  showSlide(currentSlide + 1);
-}, 3000); // Change slide every 3 seconds
+for (var i = 0; i < slideshowContainers.length; i++) {
+  startSlideshow(i);
+}
+
 </script>
 
 
