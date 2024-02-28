@@ -1,138 +1,192 @@
 
-
-
-body {
-  background-color: grey;
-}
-
-h1 {
-  color: grey;
-  text-align: left;
-}
-h2 {
-  color: grey;
-}
-
-h3 {
-  color: grey;
-  font-size: 2em;
-  font-style: italic;
-}
-h4 {
-	font-family: Georgia;
-}
-address {
-	color: grey;
-}
-
-
-
-html {
   
-   font-family:  Helvetica, Verdana, Geneva, sans-serif;
-   
-}
+  
+
+/* CSS for styling */
 
 
 header {
-	
-  background: #f2f2f2;
-  
+    /* Add styles for header */
+    background-color: #800000;
+    color: hsl(0, 3%, 43%);
+    text-align: center;
+    margin-right: .70%;
+    margin-left: .70%;
 }
+
+
+h1 {
+    font-family: Georgia;
+    font-style: italic;
+	font-size: 2.2em;
+}
+
+h2 {
+    font-family: Georgia;
+	font-size: 1.5em;	
+}
+
+h3 {    
+    font-family: Georgia;
+	font-size: .8em;
+}
+
+body {
+    display: block;
+    background-color: #800000;
+    box-shadow: rgb(138,0,0) 10px 0px 40px, rgb(138,0,0) -10px 0px 40px;
+    border-left: 1px solid rgb(139,0,0);
+    border-right: 1px solid rgb(139,0,0);
+    
+ }
 
 .flex-container {
-  display: flex;
-  	font-family: Helvetica;
-	font-size: 1.45em;
-	text-align: center;
-    color: #00001a;
-	border-width: 2px;
+    display: flex;
+    flex-direction: row; /* or column, depending on layout */
+     font-family: Helvetica;
+      font-size: 1.45em;
+      text-align: center;
+      color: #757070;
+      border-width: 2px;
+      border-style: solid;
+      border-color: #000000;
+      display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically (optional) */
+  height: 40%; /* Adjust height as needed */
+  }
+  .flex-item {
+    flex: 1; /* This allows items to grow and shrink equally */
+    /* Additional styles for flex items */
+  }
+  
+  
+  
+  .item {
+    flex: 2;
+    padding: 3%x;
+  }
+ 
+  
+
+a {
+	font-weight: bold;
+}
+a:link,
+a:visited {
+    color: #353540;
+}
+a:hover, a:focus { color: black; }
+
+nav {
+    /* Add styles for navigation */
+    background-color: #800000;
+    text-align: center;
+    font-family: Georgia;
+    font-size: 1.5em;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-width: 2px;
 	border-style: solid;
 	border-color: #000000;
-  
+    height: 25%; /* Adjust height as needed */
 }
 
-.item {
-  flex: 1;
-  margin: 0 5px;
+ul {
+    /* Remove default list styles */
+    list-style: none;
+    display: flex; /* Display the list items horizontally */
+    
+    
+    
 }
+li {
+    /* Add styles for list items */
+    display: inline-block; /* Display items in a row */
+    margin-right: 35%; /* Adjust spacing between items */
+
+}
+a {
+    /* Add styles for anchor links */
+    text-decoration: none;
+    color: #757070;
+    text-align: center;
+}
+ 
 .about {
 	font-family: Helvetica;
 	font-size: 1.45em;
 	text-align: center;
-    color: #00001a;
+    color: #757070;
 	border-width: 2px;
 	border-style: solid;
 	border-color: #000000;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-style: italic;
+    
 	
-}
-
-
-.flex-container {
-  display: flex;
-  justify-content: center; /* Horizontally centers the slideshow */
-  align-items: center; /* Vertically centers the slideshow */
-}
-
-
-
-.slideshow-container {
-  margin: 0 10px; /* Adjust the margin as needed */
-}
-
-.slideshow {
-  position: relative;
-  max-width: 100%;
-  overflow: hidden;
-}
-
-.slideshow img {
-  display: none;
-  width: 100%;
-  height: auto;
-}
-
-.slideshow img.active {
-  display: block;
-}
-
-.caption {
-  margin-bottom: 10px;
-  text-align: center;
-  font-family: Papyrus;
-}
-
-.container {
-  display: flex;
-  align-items: center;
-  	font-family: Helvetica;
-	font-size: 1.45em;
-	text-align: center;
-    color: #00001a;
-	border-width: 2px;
-	border-style: solid;
-	border-color: #000000;
-	
-}
-
-.image-container {
-  margin-left: 10px; /* Adjust the margin as needed */
-  
-  
-  
 }
 
 .image-container img {
-  width: 400px; /* Adjust the width as needed */
-  height: auto;
-  margin-right: 20px; /* Adjust the margin as needed */
-  padding: 3px 3px 3px 3px;
-  
-  
+    width: 400px; /* Adjust the width as needed */
+    height: auto;
+    margin-right: 20px; /* Adjust the margin as needed */
+    padding: 3px 3px 3px 3px;
+    border-width: 2px;
+	border-style: solid;
+    
+    
+  }
+  @media screen and (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+
+    header {
+        /* Example: Reduce header height and add padding */
+        height: auto;
+        padding: 5%; /* Adjust based on your design */
+    }
+
+    .flex-container {
+        /* Example: Stack items vertically on smaller screens */
+        flex-direction: column;
+        height: auto;
+    }
+
+    .item {
+        /* Example: Adjust flex properties and padding for items */
+        flex: 1;
+        padding: 2%; /* Adjust based on your design */
+    }
+
+    .image-container img {
+        /* Example: Make images responsive and remove right margin */
+        width: 100%;
+        margin-right: 0;
+    }
+
+    nav {
+        /* Example: Adjust navigation styles for smaller screens */
+        height: auto;
+        font-size: 1.2em;
+    }
+
+    ul {
+        /* Example: Adjust list styles for smaller screens */
+        margin-right: 0;
+    }
+
+    li {
+        /* Example: Adjust list item styles for smaller screens */
+        margin-right: 0;
+    }
+
+    .about {
+        /* Example: Adjust styles for the about section */
+        margin-left: 2%;
+        margin-right: 2%;
+    }
 }
 
-footer {
-	text-align: center;
-	color: grey;
-	
-}
+
+ 
